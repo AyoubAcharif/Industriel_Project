@@ -74,7 +74,7 @@ export default function Simple() {
     const filteredLinks = connected
         ? session.user.name === 'tech_samir'
             ? Links.filter(link => link.label === 'Accueil' || link.label === 'Valeur')
-            : session.user.name === 'nayzenayoub'
+            : session.user.name === 'bysaama'
                 ? Links.filter(link => link.label === 'Accueil' || link.label === 'Valeur' || link.label === 'Historique')
                 : Links.filter(link => link.label === 'Accueil')
         : Links.filter(link => link.label === 'Accueil');
